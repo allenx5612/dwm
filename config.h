@@ -73,13 +73,15 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *termalac[]  = { "alacritty", NULL };
 static const char *gchrome[]  = { "google-chrome-stable", NULL };
+static const char *screenshot[]  = { "deepin-screenshot", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_a,      spawn,          {.v = termalac } },
 	{ MODKEY,                       XK_g,      spawn,          {.v = gchrome } },
+	{ MODKEY,                       XK_p,      spawn,          {.v = screenshot } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },

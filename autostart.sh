@@ -9,5 +9,5 @@ fcitx &
 ./autostart/state.py &
 feh --bg-fill ./wallpaper/Wallpaper-ST2-Red.jpg &
 
-xrandr --dpi 125 --output eDP --brightness 0.5
+xrandr --dpi 125 --output eDP --brightness 0.7
 synclient VertEdgeScroll=1 TapButton1=1 TapButton2=3 TapButton3=2 HorizEdgeScroll=1 VertScrollDelta=-114 HorizScrollDelta=-114 MinSpeed=1.5 MaxSpeed=2.5 HorizTwoFingerScroll=1
